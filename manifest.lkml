@@ -8,7 +8,7 @@ localization_settings: {
 visualization: {
   id: "abs1234"
   label: "Custom Table Report"
-  file: "https://marketplace-api.looker.com/viz-dist/report_table.js"
+  url: "https://marketplace-api.looker.com/viz-dist/report_table.js"
   dependencies: [
     "visualizations/d3loader.js",
     "visualizations/vis_table_plugin.js",
