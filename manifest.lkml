@@ -21,3 +21,20 @@ visualization: {
     "visualizations/theme_traditional.css"
   ]
 }
+
+visualization: {
+  id: "abs12345"
+  label: "Custom Table Report 2"
+  file: "src/report_table.js"
+  dependencies: [
+    "src/d3loader.js",
+    "src/vis_table_plugin.js",
+    "src/vis_primitives.js",
+    "src/layout_auto.css",
+    "src/layout_fixed.css",
+    "src/theme_contemporary.css",
+    "src/theme_custom_template.css",
+    "src/theme_looker.css",
+    "src/theme_traditional.css"
+  ]
+}
