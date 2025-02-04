@@ -27,3 +27,13 @@ visualization: {
     "src/theme_traditional.css"
   ]
 }
+
+
+visualization: {
+
+  id: "blue_triangle_viz"
+
+  label: "Blue Traingle Viz"
+
+  file: "visualizations/pop_linechart_v.js"
+}
