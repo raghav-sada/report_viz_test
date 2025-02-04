@@ -211,6 +211,15 @@ view: dialogflow_agent {
     timeframes: [raw, time, date, week, month, quarter, year]
     sql: ${TABLE}.timestamp ;;
   }
+
+  measure: previous_time {
+    type: date
+    sql: MAX(DATE(DATE_ADD(${timestamp_raw}, INTERVAL -30 DAY))) ;;  # Adjust for your database syntax
+    label: "Previous Time"
+    description: "The time period for the previous day."
+  }
+
+
   dimension: trace {
     type: string
     sql: ${TABLE}.trace ;;
